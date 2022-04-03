@@ -1,0 +1,7 @@
+ipython
+jupyterlab
+keras
+matplotlib
+numpy
+pytorch
+tensorflow-macos

@@ -3,5 +3,6 @@ jupyterlab
 keras
 matplotlib
 numpy
-pytorch
+scikit-learn
 tensorflow-macos
+torch

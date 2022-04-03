@@ -1,3 +1,6 @@
+# following along with this article:
+#  https://realpython.com/python-ai-neural-network/
+
 from collections import Counter
 from numpy import dot, array, exp, square
 

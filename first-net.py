@@ -1,4 +1,6 @@
-# first-net.py
+# following along with this article:
+#  https://realpython.com/python-ai-neural-network/
+
 from numpy import dot, array, exp, square
 
 weights_1 = [1.45, -0.66]

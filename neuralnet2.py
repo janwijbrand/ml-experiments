@@ -1,3 +1,6 @@
+# following along with this article:
+#  https://towardsdatascience.com/inroduction-to-neural-networks-in-python-7e0b422e6c24
+
 import numpy as np # helps with the math
 import matplotlib.pyplot as plt # to plot error during training
 

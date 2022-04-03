@@ -1,4 +1,5 @@
-# dot-product.py
+# following along with this article:
+#  https://realpython.com/python-ai-neural-network/
 
 from numpy import dot
 

@@ -1,4 +1,5 @@
-# neuralnetwork.py
+# following along with this article:
+#  https://realpython.com/python-ai-neural-network/
 
 import numpy
 import matplotlib.pyplot as plt

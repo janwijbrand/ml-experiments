@@ -1,9 +1,11 @@
 # ml-experiments
 
+Trying get a feeling for machine learning and neural networks in Python.
+
 ## resources
 
-https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
-https://realpython.com/python-ai-neural-network/
+* https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
+* https://realpython.com/python-ai-neural-network/
 
 ## prerequisites
 

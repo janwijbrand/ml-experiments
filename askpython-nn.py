@@ -1,3 +1,5 @@
+# * https://www.askpython.com/python/examples/neural-networks
+
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
@@ -19,3 +21,47 @@ print("test_labels shape: ", test_labels.shape)
 #   plt.title("Digit: {}".format(train_labels[i]))
 #   plt.axis(False)
 # plt.show()
+
+train_images = train_images / 255
+test_images = test_images / 255
+
+print("First Label before conversion:")
+print(train_labels[0])
+
+train_labels = tf.keras.utils.to_categorical(train_labels)
+test_labels = tf.keras.utils.to_categorical(test_labels)
+
+print("First Label after conversion:")
+print(train_labels[0])
+
+model = tf.keras.Sequential([
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(units=512, activation='relu'),
+    tf.keras.layers.Dense(units=10, activation='softmax')
+])
+
+model.compile(
+    loss='categorical_crossentropy',
+    optimizer='adam',
+    metrics=['accuracy']
+)
+
+history = model.fit(
+    x=train_images,
+    y=train_labels,
+    epochs=10
+)
+
+plt.plot(history.history['loss'], color='blue')
+plt.plot(history.history['accuracy'], color='orange')
+plt.xlabel('epochs')
+plt.ylabel(['loss', 'accuracy'])
+plt.show()
+
+test_loss, test_accuracy = model.evaluate(
+    x=test_images,
+    y=test_labels
+)
+
+print("Test Loss: %.4f" % test_loss)
+print("Test Accuracy: %.4f" % test_accuracy)
